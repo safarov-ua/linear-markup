@@ -1,0 +1,28 @@
+@import "./variables.module.scss";
+
+.icon_button {
+  display: flex;
+  color: $light-color;
+  align-items: center;
+  column-gap: 8px;
+  border-radius: 100px;
+  transition: $regular-transition;
+  padding: 0px 4px 0 12px;
+  height: 28px;
+  font-weight: 500;
+  font-size: 13px;
+  border: 1px solid $icon-button-lightgray-color;
+  background-color: $icon-button-gray-color;
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    border-radius: 50px;
+    background: $icon-button-lightgray-color;
+  }
+
+  &:hover {
+    background-color: $icon-button-hover-color;
+  }
+}

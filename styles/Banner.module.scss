@@ -1,0 +1,36 @@
+@import "./variables.module.scss";
+
+.banner {
+  &__container {
+    position: relative;
+    transition: $regular-transition;
+    margin-top: 180px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    @media screen and (max-width: 1000px) {
+        margin-top: 130px;
+    }
+
+    @media screen and (max-width: 660px) {
+        margin-top: 80px;
+    }
+  }
+
+  &__image {
+    transition: $long-transition ease-in-out;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: perspective(600px) rotateX(15deg);
+
+    &_active {
+      transform: rotateX(0);
+    }
+
+    @media screen and (max-width: 660px) {
+        transform: rotateX(0);
+    }
+  }
+}

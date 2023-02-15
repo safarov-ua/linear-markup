@@ -1,0 +1,62 @@
+@import "./variables.module.scss";
+
+.dropdown {
+    position: relative;
+
+    &__title {
+        height: 100%;
+        color: $light-color;
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        transition: $regular-transition;
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        transition: $regular-transition;
+        cursor: pointer;
+
+        svg {
+            transition: $regular-transition;
+            fill: $light-color;
+        }
+
+        &_active {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__list {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid $border-color;
+        background-color: $main-background-color;
+        padding: 10px;
+        border-radius: 15px;
+        border: 1px solid $border-color;
+    }
+
+    &__item {
+        color: $light-gray-color;
+        height: 35px;
+        min-width: 180px;
+        padding: 0 10px;
+        border-radius: 10px;
+
+        &:hover {
+            background: $gray-color;
+            color: $light-color
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        height: 100%;
+    }
+}

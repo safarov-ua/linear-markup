@@ -1,0 +1,51 @@
+@import "./variables.module.scss";
+
+.navbar {
+  &__icon {
+    width: 18px;
+    height: 11px;
+    border-top: 1px solid $light-color;
+    border-bottom: 1px solid $light-color;
+    cursor: pointer;
+  }
+
+  &__container {
+    display: flex;
+    position: absolute;
+    height: calc(100vh - $header-height);
+    width: 100vw;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $main-background-color;
+  }
+
+  &__inner {
+    padding: 24px;
+    padding-top: 0;
+    width: 100%;
+    overflow: auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: $light-color;
+    transition: $regular-transition;
+    height: $header-height;
+    border-bottom: 1px solid $border-color;
+
+    &:hover {
+      color: $gray-color;
+    }
+  }
+}

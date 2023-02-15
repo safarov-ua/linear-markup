@@ -1,0 +1,22 @@
+@import "./variables.module.scss";
+
+.button {
+  background: $button-gradient;
+  color: $light-color;
+  border-radius: 100px;
+  transition: $regular-transition;
+  padding: 0px 24px;
+  height: 48px;
+  font-weight: 500;
+
+  &__small {
+    height: 32px;
+    font-size: 14px;
+    padding: 0px 18px;
+  }
+
+  &:hover {
+    text-shadow: $button-hover-text-shadow;
+    box-shadow: $button-hover-shadow;
+  }
+}

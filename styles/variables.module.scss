@@ -1,0 +1,26 @@
+//colors
+$main-background-color: rgb(0, 2, 18);
+$light-color: rgb(247, 248, 248);
+$gray-color: rgb(138, 143, 152);
+$light-gray-color: rgb(180, 188, 208);
+$border-color: rgba(255, 255, 255, 0.08);
+
+$icon-button-lightgray-color: rgba(255, 255, 255, 0.05);
+$icon-button-gray-color: rgba(255, 255, 255, 0.1);
+$icon-button-hover-color: rgba(255, 255, 255, 0.2);
+
+//transitions
+$long-transition: 1s;
+$regular-transition: 0.25s;
+
+//gradients
+$title-gradient: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38));
+$button-gradient: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+$layout-gradient: radial-gradient(ellipse 80% 50% at 50% -20%,rgba(120,119,198,0.3), rgba(255,255,255,0));
+
+//shadows
+$button-hover-shadow: rgb(80 63 205 / 50%) 0px 1px 40px;
+$button-hover-text-shadow: rgb(0 0 0 / 56%) 0px 3px 12px;
+
+//heights
+$header-height: 48px;
